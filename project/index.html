@@ -12,9 +12,9 @@
     
     <title>Platzi Conf Hawai</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-taget="#navbar" data-offset="67">
     <!-- header -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="assets/images/platzi-logo.png" alt="Platzi Logo">
@@ -24,22 +24,22 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">La conferencia</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#main">La conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Los oradores</a>
+              <a class="nav-link" href="#speakers">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">El lugar y la fecha</a>
+              <a class="nav-link" href="#place-time">El lugar y la fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conviertete en orador</a>
+              <a class="nav-link" href="#become-a-speaker">Conviertete en orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+              <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalCompra">Comprar tickets</a>
             </li>
           </ul>
         </div>
@@ -69,7 +69,7 @@
                   Ven a conocer a miembros del Team Platzi, a otros estudiantes de Platzi y a los oradores de primer nivel que tenemos para ti, te esperamos!
                   </p>
                   <a href="#" class="btn btn-outline-light">Quiero se orador</a>
-                  <button type="button" class="btn btn-platzi">Comprar tickets</button>
+                  <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra">Comprar tickets</button>
                 </div>
               </div>
             </div>
@@ -80,70 +80,70 @@
     <!-- main -->
 
     <!-- speakers -->
-      <section id="speakers" class="mt-4">
-        <div class="container">
-          <div class="row">
-            <div class="col text-center text-uppercase">
-              <small>Conoce a los</small>
-              <h2>Oradores</h2>
+    <section id="speakers" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Conoce a los</small>
+            <h2>Oradores</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="assets/speakers/sacha.jpg" alt="Speaker Sacha">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge badge-warning">JavaScript</span>
+                  <span class="badge badge-info">React</span>
+                </div>
+                <h5 class="card-title">Sasha Lifszyc</h5>
+                <p class="card-text">Neque, similique suscipit, debitis accusamus quidem accusantium reiciendis inventore excepturi blanditiis minima aperiam qui eaque.</p>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-              <div class="card">
-                <img class="card-img-top" src="assets/speakers/sacha.jpg" alt="Speaker Sacha">
-                <div class="card-body">
-                  <div class="badges">
-                    <span class="badge badge-warning">JavaScript</span>
-                    <span class="badge badge-info">React</span>
-                  </div>
-                  <h5 class="card-title">Sasha Lifszyc</h5>
-                  <p class="card-text">Neque, similique suscipit, debitis accusamus quidem accusantium reiciendis inventore excepturi blanditiis minima aperiam qui eaque.</p>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="assets/speakers/leonidas2.jpeg" alt="Speaker Leonidas">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge badge-warning">JavaScript</span>
+                  <span class="badge badge-info">React</span>
                 </div>
+                <h5 class="card-title">Sasha Lifszyc</h5>
+                <p class="card-text">Neque, similique suscipit, debitis accusamus quidem accusantium reiciendis inventore excepturi blanditiis minima aperiam qui eaque.</p>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-              <div class="card">
-                <img class="card-img-top" src="assets/speakers/leonidas2.jpeg" alt="Speaker Leonidas">
-                <div class="card-body">
-                  <div class="badges">
-                    <span class="badge badge-warning">JavaScript</span>
-                    <span class="badge badge-info">React</span>
-                  </div>
-                  <h5 class="card-title">Sasha Lifszyc</h5>
-                  <p class="card-text">Neque, similique suscipit, debitis accusamus quidem accusantium reiciendis inventore excepturi blanditiis minima aperiam qui eaque.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="assets/speakers/freddy.jpeg" alt="Speaker Freddy">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge badge-warning">JavaScript</span>
+                  <span class="badge badge-info">React</span>
                 </div>
+                <h5 class="card-title">Sasha Lifszyc</h5>
+                <p class="card-text">Neque, similique suscipit, debitis accusamus quidem accusantium reiciendis inventore excepturi blanditiis minima aperiam qui eaque.</p>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-              <div class="card">
-                <img class="card-img-top" src="assets/speakers/freddy.jpeg" alt="Speaker Freddy">
-                <div class="card-body">
-                  <div class="badges">
-                    <span class="badge badge-warning">JavaScript</span>
-                    <span class="badge badge-info">React</span>
-                  </div>
-                  <h5 class="card-title">Sasha Lifszyc</h5>
-                  <p class="card-text">Neque, similique suscipit, debitis accusamus quidem accusantium reiciendis inventore excepturi blanditiis minima aperiam qui eaque.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="assets/speakers/cvander.jpeg" alt="Speaker Christian">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge badge-warning">JavaScript</span>
+                  <span class="badge badge-info">React</span>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-              <div class="card">
-                <img class="card-img-top" src="assets/speakers/cvander.jpeg" alt="Speaker Christian">
-                <div class="card-body">
-                  <div class="badges">
-                    <span class="badge badge-warning">JavaScript</span>
-                    <span class="badge badge-info">React</span>
-                  </div>
-                  <h5 class="card-title">Sasha Lifszyc</h5>
-                  <p class="card-text">Neque, similique suscipit, debitis accusamus quidem accusantium reiciendis inventore excepturi blanditiis minima aperiam qui eaque.</p>
-                </div>
+                <h5 class="card-title">Sasha Lifszyc</h5>
+                <p class="card-text">Neque, similique suscipit, debitis accusamus quidem accusantium reiciendis inventore excepturi blanditiis minima aperiam qui eaque.</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     <!-- speakers -->
     
     <!-- dates -->
@@ -230,6 +230,42 @@
       </div>
     </footer>
     <!-- footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tickets</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-row">
+                <div class="form-group col">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="alert alert-warning" role="alert">
+              Recibirás un correo de confirmación si sales beneficiado
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
